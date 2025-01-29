@@ -15,26 +15,29 @@
     justify-content: space-between;
 }
 
+.nav div {
+    height: 50px;
+    width: 30%;
+    margin: auto 5px;
+}
+
 .nav-list {
     list-style-type: none;
     width: 200px;
+    justify-content: flex-end;
 }
 
 .nav-list li {
     margin: auto;
 }
 
-.nav-item {
-    margin: auto;
-}
-
 .nav-image {
-    height: 50px;
+    height: 100%;
 }
 
 .nav-title {
     font-size: 32px;
-    margin: auto;
+    margin: 5px;
     text-align: center;
 }
 
