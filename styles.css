@@ -1,8 +1,8 @@
 * {
-    border: 1px solid red;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin: 0px; 
-    padding: 0px;
+    margin: 0; 
+    padding: 0;
+    /* border: 1px solid red; */
 }
 
 .container {
@@ -11,7 +11,7 @@
 
 .nav {
     background-color: yellow;
-    height: 15vh;
+    height: 20vh;
     justify-content: space-between;
 }
 
@@ -28,7 +28,7 @@
 
 .nav-list li {
     margin: auto 2em;
-    font-size: 1em;
+    font-size: 1.2em;
 }
 
 .nav a {
@@ -43,6 +43,11 @@
     text-align: center;
 }
 
+.subnav {
+    height: 5vh;
+    background-color: darkgoldenrod;
+}
+
 body {
     background-color: lightyellow;
     color: darkgoldenrod;
@@ -53,22 +58,32 @@ body {
     width: 500px;
 }
 
-.intro-image {
-    object-fit: contain;
-    width: 200px;
-}
-
 .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("us.jpg");
-    background-size: 100%;
-    background-position: 50%;
-    height: 80vh;
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 38em;
+    width: 100%;
+    margin: 0;
 }
 
-.hero-image h1 {
-    color: white;
-    font-size: 3em;
-    margin: auto;
+.hero-text {
+    color: whitesmoke;
+    font-size: 2em;
+    margin: 12em 4em auto 0 ;
     text-align: center;
-    width: 10em;
+    width: 50vw;
+    height: 3em;
+}
+
+.footer {
+    background-color: goldenrod;
+    height: 15vh;
+    color: darkslategray;
+    justify-content: space-between;
+}
+
+.footer div {
+    margin: auto 5em;
 }
