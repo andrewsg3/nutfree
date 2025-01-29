@@ -11,33 +11,35 @@
 
 .nav {
     background-color: yellow;
-    height: 60px;
+    height: 15vh;
     justify-content: space-between;
 }
 
 .nav div {
-    height: 50px;
-    width: 30%;
-    margin: auto 5px;
+    height: 6em;
+    margin: auto 0.5em;
 }
 
 .nav-list {
     list-style-type: none;
-    width: 200px;
+    margin: 38px 0;
     justify-content: flex-end;
 }
 
 .nav-list li {
-    margin: auto;
+    margin: auto 2em;
+    font-size: 1em;
 }
 
-.nav-image {
-    height: 100%;
+.nav a {
+    color: darkgoldenrod;
+    font-weight: bold;
+    text-decoration: none;
 }
-
+ 
 .nav-title {
-    font-size: 32px;
-    margin: 5px;
+    font-size: 3.5em;
+    margin: auto 0.5em;
     text-align: center;
 }
 
@@ -53,5 +55,20 @@ body {
 
 .intro-image {
     object-fit: contain;
-    width: 100px;
+    width: 200px;
+}
+
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("us.jpg");
+    background-size: 100%;
+    background-position: 50%;
+    height: 80vh;
+}
+
+.hero-image h1 {
+    color: white;
+    font-size: 3em;
+    margin: auto;
+    text-align: center;
+    width: 10em;
 }
