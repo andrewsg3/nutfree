@@ -1,45 +1,15 @@
 :root {
-    /* "Soft & Welcoming" */
-    --primary: #457b9d;
-    --secondary: #e9c46a;
-    --accent: #f4a261;
-    --background: #faf3e0;
-    --text: #333333;
-
-    /* "Natural & Earthy" */
-    /* --primary: #6a994e;
-    --secondary: #bc6c25;
-    --accent: #f4a261;
-    --background: #f5f5dc;
-    --text: #2f2f2f; */
-
-    /* "Cozy & Homely" */
-    /* --primary: #8d6a9f;
-    --secondary: #d4a373;
-    --accent: #e63946;
-    --background: #f5e6ca;
-    --text: #3d3d3d; */
-
-
-    /* "Sleek and Professional" */
-    /* --primary: #264653;
-    --secondary: #e76f51;
-    --accent: #2a9d8f;
-    --background: #f4f4f4;
-    --text: #1d1d1d; */
-
     /* "Custom" */
-    /* --primary: #;
-    --secondary: #;
-    --accent: #;
-    --background: #;
-    --text: # */
+    --primary: #59d9b9;
+    --secondary: #05114f; /* header text etc. */
+    --accent: #db7d09;
+    --background: #db7d09;
+    --text: white;
 }
 
 * {
     /* border: 1px solid red; */
-    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
-    font-family: "Roboto";
+    font-family: poppins;
     margin: 0; 
     padding: 0;
 }
@@ -53,7 +23,7 @@
     background-color: var(--primary);
     box-shadow: 0 5px 10px rgba(0,0,0,0.1);
     flex-wrap: nowrap;
-    height: 8em;
+    height: 5em;
     justify-content: space-between;
     padding: 0.5em;
     position: fixed;
@@ -70,25 +40,32 @@
 .nav-left {
     width: 60%;
     justify-content: flex-start;
+    flex: 1;
+}
+
+.nav-center {
+    display: flex; 
+    align-items: center;
 }
 
 .nav-title {
-    font-family: "Montserrat";
     font-size: 3.5em;
     margin: auto 0.5em;
     text-align: center;
     color: var(--secondary);
+    text-shadow: 1px 1px 2px var(--accent);
 }
 
 .nav-image {
     margin: auto 0.5em;
-    height: 8em;
+    height: 100%;
     object-fit: cover;
     width: auto;
 }
 
 .nav-right {
     justify-content: flex-end;
+    flex: 1;
 }
 
 .nav-right ul {
@@ -128,14 +105,13 @@ body {
 
 
 .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("us.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("map.jpg");
     background-size: 100% auto;
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
     height: 50em;
     width: 100%;
     margin: 0;
-    margin-top: 8em;
 
 }
 
@@ -189,6 +165,7 @@ section {
     /* left: 0;
     position: fixed; */
     width: 100%;
+    box-shadow: 100px 100px 20px black;
 }
 
 .footer div {
