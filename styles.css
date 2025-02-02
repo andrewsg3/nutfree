@@ -103,43 +103,58 @@ body {
     color: var(--text);
 }
 
-
-.hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("map.jpg");
-    background-size: 100% auto;
-    background-position: top;
-    background-repeat: no-repeat;
-    height: 50em;
+.hero {
+    align-items: center;
+    background-color: var(--accent);
+    display: flex;
+    padding: 3em 0 1em;
     width: 100%;
-    margin: 0;
 
+    justify-content: center;
+
+    gap: 5em;
 }
 
-.blur {
-    background-color: rgba(#fff, 0.5);
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(5px);
-    width: 100%;
-    height: 100%;
-    margin: 0; padding: 0;
+.neon-text {
+    color: #fff;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #0fa,
+      0 0 82px #0fa,
+      0 0 92px #0fa,
+      0 0 102px #0fa,
+      0 0 151px #0fa;
 }
 
 .hero-text {
     color: var(--secondary);
-    font-family: "Montserrat" !important;
     font-size: 2em;
-    margin: 12em 4em auto 4em ;
     text-align: center;
-    width: 40vw;
-    height: 3em;
+    width: 16em;
+    /* text-shadow: 1px 1px 2px black; */
+}
+
+.hero-image {
+    /* box-shadow: 1px 1px 10px white; */
+    width: 50em;
+    height: auto;
+}
+
+area {
+    background-color: blue;
+    opacity: 1;
+    display: 1;
 }
 
 .intro {
-    background-color: var(--background);
+    background-color: var(--secondary);
+    padding: 2em 0;
 }
 
 .intro > h1 {
-    margin: 1em;
+    
 }
 
 .recipes {
